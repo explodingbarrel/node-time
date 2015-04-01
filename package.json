@@ -1,29 +1,37 @@
 {
   "name": "time",
-  "description": "\"time.h\" bindings for NodeJS",
-  "keywords": ["date", "time", "time.h", "timezone", "setTimezone", "getTimezone"],
-  "version": "0.8.3",
+  "description": "\"time.h\" bindings for Node.js",
+  "keywords": [
+    "date",
+    "time",
+    "time.h",
+    "timezone",
+    "setTimezone",
+    "getTimezone"
+  ],
+  "version": "0.11.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/TooTallNate/node-time.git"
   },
   "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
+  "license": "MIT",
   "contributors": [
-    { "name": "Diogo Resende", "email": "dresende@thinkdigital.pt" }
+    {
+      "name": "Diogo Resende",
+      "email": "dresende@thinkdigital.pt"
+    }
   ],
   "main": "./index.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "engines": {
-    "node": "*"
-  },
   "dependencies": {
-      "bindings": "*"
-    , "debug": "*"
+    "bindings": "1.2.0",
+    "debug": "2",
+    "nan": "~1.7.0"
   },
   "devDependencies": {
-      "mocha": "*"
-    , "should": "*"
+    "mocha": "*"
   }
 }
